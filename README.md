@@ -10,4 +10,4 @@ This presentation and code sample gives introduction to almost all the core conc
 Presentation is based off Deck.js
 
 ===================
-1) Code Workshop - GNUnify SICSR Pune - 15 Fen 2014
+1) Code Workshop - GNUnify SICSR Pune - 15 Feb 2014
