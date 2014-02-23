@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Bottle</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <div style="text-align: center;margin-top:10%">
+        <img src="images/bottle_logo.png">
+        <h2>Python micro web-framework</h2>
+        <h4>bottlepy.org</h4>
+        <p>Ashish Gaonker - @ashishgec</p>
+        <p>Ignite Solutions - www.ignitesol.com </p>
+      </div> 
+    </section>
+
+    <section class="slide">
+        <div style="margin-left:20%;margin-top:10%">
+	      <ul class="deck-child-current">
+      <h2> Bottle is so cool </h2>
+			<li class="slide deck-current" aria-hidden="false">
+			  	<strong>Single file Python module, it's very small</strong>
+			</li>
+
+			<li class="slide deck-next" aria-hidden="true">
+			  	<strong>No Python dependencies</strong>
+			</li>
+
+			<li class="slide deck-after" aria-hidden="true">
+			  	<strong>Easy Integration with third party template engines</strong>
+			</li>
+
+			<li class="slide deck-after"  aria-hidden="true">
+			  	<strong>Easily enables clean URI routes</strong>
+			</li>
+
+			<li class="slide deck-after"  aria-hidden="true">
+				<strong>Supports RESTful out of the box</strong>
+			</li>
+
+			<li class="slide deck-after"  aria-hidden="true">
+				<strong>Useful selection of plugins</strong>
+			</li>	
+
+			<li class="slide deck-after" aria-hidden="true">
+				<strong>Full support of Python 2 and Python 3</strong>
+			</li>			
+	      </ul>
+        </div>    
+    </section>
+
+    <section class="slide">
+        <div style="margin-left:20%;margin-top:10%">
+        <h2>What does it have ?</h2>
+    	      <ul class="deck-child-current">
+    	        <li class="slide deck-current"  aria-hidden="false">
+    	          <strong>Routing</strong>
+    	        </li>
+
+    	        <li class="slide deck-next"  aria-hidden="true">
+    	          <strong>Small abtraction over wsgi</strong>
+    	        </li>
+
+    	        <li class="slide deck-after"  aria-hidden="true">
+    	          <strong>Templates</strong>
+    	        </li>
+
+    	        <li class="slide deck-after"  aria-hidden="true">
+    	          <strong>Utilities</strong>
+    	        </li>
+
+              <li class="slide deck-after"  aria-hidden="true">
+                <strong>In built Httpserver</strong>
+              </li>
+    	      </ul>
+        </div>    
+    </section>
+
+        <section class="slide">
+        <div style="margin-left:20%;margin-top:10%">
+        <h2>What it does NOT have ?</h2>
+    	      <ul class="deck-child-current">
+    	        <li class="slide deck-current"  aria-hidden="false">
+    	          <strong>In built Session support</strong>
+    	        </li>
+
+    	        <li class="slide deck-next"  aria-hidden="true">
+    	          <strong>In built form serialization and validation system</strong>
+    	        </li>
+
+    	        <li class="slide deck-after"  aria-hidden="true">
+    	          <strong>A caching framework , Unit Testing framework</strong>
+    	        </li>
+
+    	        <li class="slide deck-after"  aria-hidden="true">
+    	          <strong>An internationalization system</strong>
+    	        </li>
+
+    	      </ul>
+        </div>    
+    </section>
+
+    <section class="slide">
+        <div style="margin-left:20%;margin-top:10%">
+        <h2>Where would I use it</h2>
+    	      <ul class="deck-child-current">
+    	        <li class="slide deck-current" aria-hidden="false">
+    	          <strong>Want to have lots of flexibility</strong>
+    	        </li>
+
+    	        <li class="slide deck-next" aria-hidden="true">
+    	          <strong>Build your own larger framework</strong>
+    	        </li>
+
+    	        <li class="slide deck-after" aria-hidden="true">
+    	          <strong>Just build something really simple</strong>
+    	        </li>
+
+    	        <li class="slide deck-after" aria-hidden="true">
+    	          <strong>Rapid prototyping</strong>
+    	        </li>
+
+    	        <li class="slide deck-after" aria-hidden="true">
+    	          <strong>Perfect learning tool for those just getting starting with web development</strong>
+    	        </li>
+    	      </ul>
+        </div>    
+    </section>
+
+    <section class="slide">
+      <h2 style="text-align:center"> Requirements </h2>
+        <pre>
+          <code>
+          Python 2.7<br>
+          easy_install bottle <br>
+          </code>
+        </pre>  
+    </section>
+
+    <section class="slide">
+    	<h2 style="text-align:center"> Code </h2>
+      	<pre>
+      		<code>
+      		from bottle import route, run <br>
+
+          	@route('/hello/:name') <br>
+          	def index(name): <br>
+            		return 'Hello %s!' % name.title() <br>
+
+          	run(host='localhost', port=8080) <br>
+       		</code>
+       	</pre>	
+    </section>
+
+
+    <section class="slide">
+      <h2 style="text-align:center"> Routes </h2>
+      <div style="text-align: center">
+        <h3>Request Routing</h3>
+        <h3>The default application</h3>
+        <h3>reloader, debug</h3>
+        <h3>Dynamic routes</h3>
+        <h3>Templates</h3>
+        <h3>Http Request Methods</h3>
+        <h3>Error Pages</h3>
+      </div>  
+    </section>
+
+    <section class="slide">
+      <h2 style="text-align:center"> Bottle as content generator </h2>
+      <div style="text-align: center;">
+          <h4>Dict - Content type:application/json </h4><br>
+          <h4>None/False/Empty - Content-Length:0</h4><br>
+          <h4>Strings - Content-Type:Content-Type</h4><br>
+          <h4>HTTPError or HTTPResponse Exceptions</h4>
+      </div>    
+ 
+    </section>
+
+    <section class="slide">
+      <h2 style="text-align:center"> STATIC FILES </h2>
+        <pre>
+          <code>
+@app.route('/static/&lt;filename:re:.*\.jpeg&gt;')<br>
+def send_image(filename):<br>
+    return static_file(filename, root='./static')<br>
+<br>
+@app.route('/download/&lt;filename:path&gt;')<br>
+def down_image(filename):<br>
+    return static_file(filename, root='./static', download=filename)<br>
+          </code>
+        </pre>
+    </section>
+
+    <section class="slide">
+      <h2 style="text-align:center"> HTTP ERRORS AND REDIRECTS </h2>
+        <pre>
+          <code>
+@route('/restricted')<br>
+def restricted():<br>
+    abort(401, "Sorry, access denied.")<br>
+
+@route('/wrong/url')<br>
+def wrong():<br>
+    redirect("/right/url")<br>
+          </code>
+        </pre> 
+    </section>
+
+    <section class="slide">
+      <h2 style="text-align:center"> THE RESPONSE OBJECT </h2>
+        <pre>
+          <code>
+@route('/wiki/&lt;page&gt;')<br>
+def wiki(page):<br>
+    response.set_header('Content-Language', 'en')<br>
+    response.set_header('Set-Cookie', 'name=value')
+    response.add_header('Set-Cookie', 'name2=value2')
+          </code>
+        </pre> 
+    </section>
+
+    <section class="slide">
+      <h2 style="text-align:center"> COOKIES </h2>
+        <pre>
+          <code>
+@route('/hello')<br>
+def hello_again():<br>
+    if request.get_cookie("visited"):<br>
+        return "Welcome back! Nice to see you again"<br>
+    else:<br>
+        response.set_cookie("visited", "yes")<br>
+        return "Hello there! Nice to meet you"<br>
+          </code>
+        </pre> 
+    </section>
+
+
+    <section class="slide">
+      <h2 style="text-align:center"> FORMSDICT and WSGIHeaderDict </h2>
+        <pre>
+          <code>
+Attribute access<br>
+name = request.cookies.name<br>
+Multiple values per key<br>
+request.forms.getall('multiple_choice')<br>
+
+request.headers.get('X-Requested-With')<br>
+          </code>
+        </pre> 
+    </section>
+
+
+    <section class="slide">
+
+      <img src="images/formdict.png" height="500px" width="800px" style="margin-top:100px">
+
+    </section>
+    <section class="slide">
+        <div style="text-align:center">
+        <h2>Plugins</h2>
+        <div>
+          <h3>Add missing functionality to the framework</h3>
+          <h3>Integrate third party libraries</h3>
+          <h3>Automate some repetitive work</h3>
+        </div>
+    </section>
+
+    <section class="slide">
+      <h2 style="text-align:center"> Asynchronous Applications </h2>
+      <div style="text-align: center">
+        <h3>Awesome gevent project</h3>
+        <h3>Use Monkey-Patching</h3>
+        <h3>gevent-based pseudo-threads</h3>
+      </div> 
+
+    </section>
+
+    <section class="slide">
+
+      <h1>Questions  ???</h1>
+      
+    </section>
+    
+    
+
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
